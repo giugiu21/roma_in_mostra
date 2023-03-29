@@ -1,0 +1,74 @@
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+
+}
+
+.media-scroller{
+    
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 36%;
+
+    padding: 0 2rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+
+// .card-container{
+//     display: block;
+//     float: left;
+//     width: 30%;
+//     margin-left: 1.6%;
+//     margin-right: 1.6%;
+//     margin-bottom: 20px;
+
+//     .card-image{
+//         height: 200px;
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         border-top-right-radius: 1rem!important;
+//         border-top-left-radius: 1rem!important;
+//     }
+
+//     .card-body{
+//         text-align: center;
+
+//         .card-title{
+//             font-size: 18px;
+//             height: 60px;
+//             color: rgb(56, 94, 25);
+
+//         }
+
+//         .card-text{
+//             text-align: justify;
+//             margin-bottom: 30px;
+//             margin-top: -25px;
+
+//         }
+
+        
+//     }
+// }
+
+// .card-button{
+
+
+//     .btn.btn-primary{
+//         background: rgb(56, 94, 25);
+//         border: none;
+//         margin: auto;
+//         padding: 10px 20px;
+//     }
+
+// }

@@ -7,6 +7,10 @@ nav{
 
 }
 
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end!important;
+}
+
 header{
     //background-color: #006666!important;
     background-color: black!important;
@@ -29,12 +33,11 @@ header{
 
 
 
-li{
+.nav-link{
     color: white;
     text-decoration: none;
-    padding-left: 30px;
+    padding-left: 30px!important;
     font-size: 16px;
-    //font-family: 'Lora', serif;
 }
 
 .mat-icon{

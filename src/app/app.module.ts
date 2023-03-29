@@ -9,6 +9,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { MostreComponent } from './components/mostre/mostre.component';
+import { MostraCardComponent } from './shared/mostra-card/mostra-card.component';
+import { ListaMostreComponent } from './components/mostre/lista-mostre/lista-mostre.component';
+import { ScrollingCardComponent } from './shared/scrolling-card/scrolling-card.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    MostreComponent,
+    MostraCardComponent,
+    ListaMostreComponent,
+    ScrollingCardComponent
   ],
   imports: [
     BrowserModule,
