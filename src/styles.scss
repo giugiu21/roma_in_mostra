@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules//bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+
+body { 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Fraunces', sans-serif; 
+}
+
+p{
+    font-weight: lighter!important;
+}
+
+.contenitore-main{
+    margin-bottom: 50px;
+    padding-top: 130px!important;
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
