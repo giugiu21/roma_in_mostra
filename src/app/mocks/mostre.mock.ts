@@ -46,13 +46,13 @@ export const MOSTRE: Mostra[] = [
     },
     {
         _id: 5,
-        title: "Galleria Borghese",
+        title: "hhh",
         image: "",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu." ,
         place: "Galleria Borghese",
         endDate: "sempre aperta",
         published: true,
-        featured: true
+        featured: false
     },
 
 ]
