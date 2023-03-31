@@ -1,3 +1,5 @@
+@import '../../../styles/colors.scss';
+
 .snaps-inline{
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
@@ -33,40 +35,44 @@
     margin-right: 1.6%;
     margin-bottom: 20px;
 
-    .card-image{
-        height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-top-right-radius: 1rem!important;
-        border-top-left-radius: 1rem!important;
-    }
-
     .card-body{
         text-align: center;
-
-        .card-title{
-            font-size: 18px;
-            height: 60px;
-            color: rgb(56, 94, 25);
-
-        }
-
-        .card-text{
-            text-align: justify;
-            margin-bottom: 30px;
-            margin-top: -25px;
-
-        }
 
         
     }
 }
 
+.card-image{
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 0.35rem!important;
+    border-top-left-radius: 0.35rem!important;
+}
+
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px!important;
+    height: 60px;
+    color: $oliva!important;
+
+}
+
+.card-text{
+    text-align: justify;
+    margin-bottom: 30px;
+    margin-top: -25px;
+
+}
+
+
 .card-button{
+    display: flex;
 
     .btn.btn-primary{
-        background: rgb(56, 94, 25);
+        background: $oliva;
         border: none;
         margin: auto;
         padding: 10px 20px;

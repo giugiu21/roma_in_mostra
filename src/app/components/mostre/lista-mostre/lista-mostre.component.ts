@@ -24,4 +24,6 @@ export class ListaMostreComponent implements OnInit{
       }
     })
   }
+
+  
 }

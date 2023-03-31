@@ -10,14 +10,32 @@ import { MostraService } from 'src/app/service/mostra.service';
 export class HomeComponent {
   mostre: Mostra[];
 
-  titoloCliccato: string;
+  titoloCliccato= '';
 
   places = [{
-      place: "Galleria Borghese",
+      place: "Città del Vaticano",
+  },
+  {
+    place: 'Galleria Borghese'
+  },
+  {
+    place: 'Galleria Nazionale'
+  },
+  {
+    place: 'MACRO'
+  },
+  {
+    place: 'Palazzo Barberini'
   },
   {
     place: 'Palazzo Bonaparte'
-  }
+  },
+  {
+    place: 'Palazzo Braschi'
+  },
+  {
+    place: 'Villa Pamphilj'
+  },
 ];
 
 

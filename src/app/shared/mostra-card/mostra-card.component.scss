@@ -1,3 +1,5 @@
+@import "../../../styles/colors.scss";
+
 .card-container{
     float: left;
     width: 30%;
@@ -10,17 +12,18 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        border-top-right-radius: 1rem!important;
-        border-top-left-radius: 1rem!important;
+        border-top-right-radius: 0.35rem!important;
+        border-top-left-radius: 0.35rem!important;
     }
 
     .card-body{
         text-align: center;
 
+
         .card-title{
             font-size: 18px;
             height: 60px;
-            color: rgb(56, 94, 25);
+            color: $oliva;
 
         }
 
@@ -39,7 +42,7 @@
 
 
     .btn.btn-primary{
-        background: rgb(56, 94, 25);
+        background: $oliva;
         border: none;
         margin: auto;
         padding: 10px 20px;

@@ -13,4 +13,10 @@ export class MostraService {
   getMostre(): Observable<Mostra[]>{
     return of (MOSTRE);
   }
+
+  getMostra(id: number): Observable<Mostra> {
+    const mostra = MOSTRE.find(mostra => mostra._id == id);
+    return of (mostra);
+
+  }
 }

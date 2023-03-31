@@ -13,6 +13,8 @@ import { MostreComponent } from './components/mostre/mostre.component';
 import { MostraCardComponent } from './shared/mostra-card/mostra-card.component';
 import { ListaMostreComponent } from './components/mostre/lista-mostre/lista-mostre.component';
 import { ScrollingCardComponent } from './shared/scrolling-card/scrolling-card.component';
+import { DetailComponent } from './components/mostre/detail/detail.component';
+import { RegistrationComponent } from './components/user/registration/registration.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { ScrollingCardComponent } from './shared/scrolling-card/scrolling-card.c
     MostreComponent,
     MostraCardComponent,
     ListaMostreComponent,
-    ScrollingCardComponent
+    ScrollingCardComponent,
+    DetailComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,11 +5,11 @@
     <div>
         <div class="prima-sezione">
             <div class="titolo">
-                <h2>Impara l'arte ma <br><span>non</span> metterla da parte</h2>
+                <h2>Impara l'arte ma <br><span>non</span> <br>metterla da parte</h2>
             </div>
             <div class="testo-prima-sezione">
                 <h3>Perchè è importante conoscere l'arte?</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, impedit quo. Asperiores illum nesciunt cumque officia ipsum sunt saepe voluptatibus cum laudantium corporis, adipisci, quos, dolor corrupti dolores repellat nobis perferendis natus. Deleniti voluptatem doloremque dolores iusto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolorum dignissimos sapiente ea sint facere illo sed temporibus ducimus labore corporis, mollitia atque tenetur quasi eveniet eligendi maiores id, ratione quia neque nemo est. Consectetur, deserunt quisquam. Ipsam porro distinctio cum provident eligendi repellat et sunt minima excepturi officia quas possimus dolor pariatur aliquid ratione laudantium delectus, reprehenderit omnis voluptatum neque unde ducimus modi quae! Ad maxime error dolorem vel iusto.</p>
 
             </div>
         </div>
@@ -30,19 +30,37 @@
             
         </div>
         <div class="mappa" *ngIf="titoloCliccato == ''; else Mappa">
-            
+            <p> clicca sul nome per visualizzare sulla mappa</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190029.01773952684!2d12.395911969945145!3d41.909985971364684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRoma%20RM!5e0!3m2!1sit!2sit!4v1680269922841!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
 
 <ng-template #Mappa>
+    <div class="mappa" *ngIf="titoloCliccato == 'Città del Vaticano'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5938.980723522068!2d12.447683824837183!3d41.90381626688037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325890a57d42d3d%3A0x94f9ab23a7eb0!2s00120%20Citt%C3%A0%20del%20Vaticano!5e0!3m2!1sit!2sit!4v1680280053357!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <div class="mappa" *ngIf="titoloCliccato == 'Galleria Borghese'">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.00671953417!2d12.489955515109083!3d41.91421427113304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f610456d7e6ab%3A0x1bb4a47639e07bbf!2sMuseo%20e%20Galleria%20Borghese!5e0!3m2!1sit!2sit!4v1680190718722!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mappa" *ngIf="titoloCliccato == 'Galleria Nazionale'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.8751774749176!2d12.479980314931591!3d41.91704197921917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f60fd228cccc5%3A0x2cf2aafd0eff0128!2sGalleria%20Nazionale%20d&#39;Arte%20Moderna%20e%20Contemporanea!5e0!3m2!1sit!2sit!4v1680280152736!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mappa" *ngIf="titoloCliccato == 'MACRO'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0347552045255!2d12.500871614931363!3d41.91361157921933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f610ec6ba45c7%3A0xcf7046b07043c8b5!2sMACRO!5e0!3m2!1sit!2sit!4v1680280192149!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mappa" *ngIf="titoloCliccato == 'Palazzo Barberini'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.521391312563!2d12.487859214930989!3d41.903149079220185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61a97ad0b193%3A0x3576dfc9263786c0!2sGalleria%20Nazionale%20d&#39;Arte%20Antica%20a%20Palazzo%20Barberini!5e0!3m2!1sit!2sit!4v1680280245659!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="mappa" *ngIf="titoloCliccato == 'Palazzo Bonaparte'">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8162225229244!2d12.479768315441751!3d41.89680927922081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604d128f6bd9%3A0x437d66af291c7f97!2sPalazzo%20Bonaparte!5e0!3m2!1sit!2sit!4v1680192583068!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-   
+    <div class="mappa" *ngIf="titoloCliccato == 'Palazzo Braschi'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.7817317815366!2d12.470535414930803!3d41.897550979220696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f604f815ae76d%3A0x43dcb90989920f77!2sMuseo%20di%20Roma%20-%20Palazzo%20Braschi!5e0!3m2!1sit!2sit!4v1680280270479!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mappa" *ngIf="titoloCliccato == 'Villa Pamphilj'">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.3523763028893!2d12.43942041493029!3d41.88527827922166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f601ad033e561%3A0x20f81ec8cfffda04!2sVilla%20Doria%20Pamphilj!5e0!3m2!1sit!2sit!4v1680280302984!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </ng-template>
     
     

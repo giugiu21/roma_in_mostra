@@ -1,0 +1,31 @@
+@import "../../../../styles/colors.scss";
+
+.contenitore-form{
+    padding-top: 180px;
+    padding-bottom: 120px;
+    background-image: url('https://www.visitareroma.com/wp-content/uploads/2019/10/Musei-Vaticani-e-Cappella-Sistina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row{
+    margin-right: -10rem!important;
+    margin-left: -10rem!important;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.card{
+    width: 50%;
+    margin: 0 25%;
+    background-color: rgba(255, 255, 255, 0.85);
+    
+}
+
+
+.btn-primary{
+    background-color: $oliva!important;
+    border-color: $oliva!important;
+    font-weight: bold;
+}

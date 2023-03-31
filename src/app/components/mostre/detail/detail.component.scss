@@ -1,0 +1,41 @@
+@import "../../../../styles/colors.scss";
+
+.colonna-sx{
+    width: 39%;
+    height: 400px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+    margin-top: 40px;
+    padding-left: 0;
+    margin-left: 0;
+    border-radius: 1rem;
+}
+
+.colonna-dx{
+    width: 60%;
+    float: left;
+    padding: 20px;
+
+    h2{
+        color: $terracotta;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h4{
+        font-size: 16px;
+    }
+
+    strong{
+        color: $terracotta;
+    }
+
+}

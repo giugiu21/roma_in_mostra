@@ -1,6 +1,14 @@
+@import "../../../../styles/colors.scss";
+
+.container-fluid{
+    margin: 20px 0px;
+}
+
+
 h2{
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    color:brown;
+    color: $terracotta;
+    padding-bottom: 15px;
 }
