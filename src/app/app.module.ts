@@ -15,7 +15,9 @@ import { ListaMostreComponent } from './components/mostre/lista-mostre/lista-mos
 import { ScrollingCardComponent } from './shared/scrolling-card/scrolling-card.component';
 import { DetailComponent } from './components/mostre/detail/detail.component';
 import { RegistrationComponent } from './components/user/registration/registration.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PasswordModule } from 'primeng/password';
+import { DropdownModule } from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,10 @@ import { RegistrationComponent } from './components/user/registration/registrati
     BrowserAnimationsModule,
     MaterialExampleModule,
     NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    PasswordModule,
+    DropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
