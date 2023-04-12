@@ -5,6 +5,7 @@ import { ListaMostreComponent } from './components/mostre/lista-mostre/lista-mos
 import { RegistrationComponent } from './components/user/registration/registration.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'dettaglio/:title/:_id', component: DetailComponent},
   {path: '', pathMatch: 'full', component: ListaMostreComponent},
 ]},
+{path: 'addMostra', component: AddMostraComponent},
 {path: 'registrati', component: RegistrationComponent},
 {path: '**', redirectTo: 'home'},
 ];

@@ -7,12 +7,12 @@ import { MostraService } from 'src/app/service/mostra.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   mostre: Mostra[];
 
   titoloCliccato= '';
 
-  places = [{
+  places1 = [{
       place: "Città del Vaticano",
   },
   {
@@ -23,7 +23,10 @@ export class HomeComponent {
   },
   {
     place: 'MACRO'
-  },
+  }
+];
+
+places2 = [
   {
     place: 'Palazzo Barberini'
   },
@@ -35,7 +38,7 @@ export class HomeComponent {
   },
   {
     place: 'Villa Pamphilj'
-  },
+  }
 ];
 
 
@@ -50,7 +53,8 @@ memorizzaTitolo(titolo: string){
 }
 
 
-  constructor(private mostraService: MostraService){}
+  constructor(
+    private mostraService: MostraService){}
 
   ngOnInit(): void {
     this.mostraService.getMostre().subscribe({
@@ -60,7 +64,7 @@ memorizzaTitolo(titolo: string){
       error: (err) =>{
         console.log(err);
       }
-    })
+    });
   }
   
 }

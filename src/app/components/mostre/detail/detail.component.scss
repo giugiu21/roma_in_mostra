@@ -1,5 +1,7 @@
 @import "../../../../styles/colors.scss";
 
+
+
 .colonna-sx{
     width: 39%;
     height: 400px;
@@ -7,16 +9,19 @@
     background-position: center;
     background-size: cover;
     margin-right: 10px;
-    margin-top: 40px;
+    margin-top: 90px;
     padding-left: 0;
     margin-left: 0;
     border-radius: 1rem;
+    margin-bottom: 100px;
 }
 
 .colonna-dx{
     width: 60%;
+    margin-top: 50px;
     float: left;
     padding: 20px;
+    margin-bottom: 100px;
 
     h2{
         color: $terracotta;

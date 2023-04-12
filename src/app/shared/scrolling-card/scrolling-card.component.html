@@ -1,7 +1,7 @@
 <div class="container-main-scroller">
   <div class="media-scroller snaps-inline">
     <!-- <app-mostra-card [mostre]="getFeatured()"></app-mostra-card> -->
-           <div class="card" *ngFor="let mostra of getFeatured()">
+           <div class="card" *ngFor="let mostra of mostre$ | async">
               <div class="card-image" [ngStyle]="{'background-image': 'url(' + mostra.image +')'}"></div>
               <div class="card-body">
                 <h5 class="card-title">{{mostra.title}}</h5>

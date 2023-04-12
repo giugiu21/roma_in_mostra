@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { Observable, map } from 'rxjs';
 import { Mostra } from 'src/app/models/mostra.model';
+import { MostraService } from 'src/app/service/mostra.service';
 
 @Component({
   selector: 'app-scrolling-card',
@@ -8,15 +10,20 @@ import { Mostra } from 'src/app/models/mostra.model';
 })
 export class ScrollingCardComponent {
   
-  @Input() mostre: Mostra[];
-  mostreFeatured: Mostra[];
+  mostre: Mostra[];
+  //mostreFeatured: Mostra[];
 
+  constructor( private mostraService: MostraService){}
+
+  mostre$: Observable<Mostra[]> = this.mostraService.getMostre().pipe(
+    map(response => response.filter(mostra => mostra.featured == true)),
+    //map(res => this.mostre = res),
+  );
   
 
-  getFeatured(): Mostra[]{
-    this.mostreFeatured = this.mostre.filter(mostra => mostra.featured == true);
-    return this.mostreFeatured;
-  }
+  // getFeatured(): Mostra[]{
+  //   return this.mostre.filter(mostra => mostra.featured == true);
+  // }
 
   
 }

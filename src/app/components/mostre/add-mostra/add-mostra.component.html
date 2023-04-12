@@ -1,0 +1,61 @@
+<div class="container-main-form">
+    <div class="container-form">
+        <h3>Inserisci una nuova mostra</h3>
+        <form class="contenitore-form" [formGroup]="form" (onSubmit)="onSubmit()">
+            <div>
+                <div class="form-element">
+                    <label>Titolo:</label>
+                    <input type="text" id="title" name="title" class="form-control" formControlName="title"/>
+                    <p class="danger" *ngIf="!form.get('title')?.valid && form.get('title').touched">Il campo titolo è obbligatorio</p>
+                </div>
+    
+                <div class="form-element">
+                    <label>Descrizione:</label>
+                    <br>
+                    <textarea rows = "5" cols = "60" name = "description" class="form-control" formControlName="description"></textarea>
+                    <p class="danger" *ngIf="!form.get('description')?.valid && form.get('description').touched">Il campo descrizione è obbligatorio</p>
+                </div>
+    
+                <div class="form-element">
+                    <label>Inserisci l'url dell'immagine:</label>
+                    <input type="text" id="image" name="image" class="form-control" formControlName="image"/>
+                    <p class="danger" *ngIf="!form.get('image')?.valid && form.get('image').touched">Il campo url immagine è obbligatorio</p>
+                </div>
+
+                <div class="form-element">
+                    <label>Luogo:</label>
+                    <input type="text" id="place" name="place" class="form-control" formControlName="place"/>
+                    <p class="danger" *ngIf="!form.get('place')?.valid && form.get('place').touched">Il campo luogo è obbligatorio</p>
+                </div>
+
+                <div class="form-element">
+                    <label>Data di fine mostra:</label>
+                    <input type="text" label="gg/mm/aa" id="endDate" name="endDate" class="form-control" formControlName="endDate"/>
+                    <p class="danger" *ngIf="!form.get('endDate')?.valid && form.get('endDate').touched">Il campo data è obbligatorio</p>
+                </div>
+
+                <div class="form-element">
+                    <label>Vuoi metterla in evidenza nella pagina home?
+                    <input type="checkbox" id="featured" name="featured" formControlName="featured"/>
+                    </label>
+                    <p class="danger" *ngIf="!form.get('featured')?.valid && form.get('featured').touched">Il campo in evidenza è obbligatorio</p>
+                </div>
+
+                <div class="form-element">
+                    <label>Vuoi pubblicarla?
+                    <input type="checkbox" id="published" name="published" formControlName="published"/>
+                    </label>
+                </div>
+
+                
+                <div class="container-btn-form">
+                    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Pubblica Mostra</button>
+                </div>
+            </div>
+            
+
+        </form>
+        
+    </div>
+    
+</div>

@@ -16,17 +16,27 @@
     </div>
     <div class="seconda-sezione">
         <h1>Mostre in evidenza</h1>
-        <app-scrolling-card [mostre]="mostre"></app-scrolling-card>
+        <app-scrolling-card></app-scrolling-card>
         
     </div>
     <div class="terza-sezione">
-        <div class="leggenda">
+        <div class="row leggenda">
             <h1>Dove trovare le mostre</h1>
-            <ul *ngFor="let luogo of places">
-                <li>
-                    <h3 (click)="memorizzaTitolo(luogo.place)"><mat-icon>pin_drop</mat-icon>{{luogo.place}}</h3>
-                </li>
-            </ul>
+            <div *ngFor="let luogo of places1" class="column">
+                <ul>
+                    <li>
+                        <h3 (click)="memorizzaTitolo(luogo.place)"><mat-icon>pin_drop</mat-icon>{{luogo.place}}</h3>
+                    </li>
+                </ul>
+            </div>
+            <div *ngFor="let luogo of places2" class="column">
+                <ul>
+                    <li>
+                        <h3 (click)="memorizzaTitolo(luogo.place)"><mat-icon>pin_drop</mat-icon>{{luogo.place}}</h3>
+                    </li>
+                </ul>
+
+            </div>
             
         </div>
         <div class="mappa" *ngIf="titoloCliccato == ''; else Mappa">

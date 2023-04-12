@@ -20,7 +20,7 @@ export class DetailComponent implements OnInit{
   ){}
 
   onGetMostra(): void{
-    const id = Number(this.activatedRoute.snapshot.paramMap.get('_id'));
+    const id = this.activatedRoute.snapshot.paramMap.get('_id');
 
     this.MostraService.getMostra(id).subscribe({
       next: (res)=> {

@@ -18,7 +18,7 @@
 }
 
 .titolo{
-    width: 40%;
+    width: 45%;
     margin: 0;
     background-color: $ocra;
     float: left;
@@ -28,8 +28,8 @@
 
 
     h2{
-        font-size: 55px;
-        font-weight: bold;
+        font-size: 50px;
+        font-weight: bolder;
         word-spacing: normal;
         line-height: 3rem;
         padding: 10px;
@@ -40,7 +40,7 @@
 
 .testo-prima-sezione{
     padding-left: 7px;
-    width: 60%;
+    width: 55%;
     float: left;
 
     h3{
@@ -69,24 +69,24 @@
 
 }
 
-.terza-sezione{
-    width: 100%;
-    float: left;
-}
 
 .terza-sezione{
     width: 100%;
-    height: 700px;
+    height: 550px;
     float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 200px;
-    margin-top: 30px;
+    margin-top: 200px;
     //background-color: rgb(65, 108, 225);
     padding-top: 30px;
     padding-bottom: 30px;
 
     h1{
         font-weight: bold;
-        font-size: 45px;
+        font-size: 35px;
         //text-align: center;
         margin-bottom: 30px;
         margin-left: 20px;
@@ -96,7 +96,7 @@
     }
 
     .leggenda{
-        width: 30%;
+        width: 100%;
         float: left;
         
 
@@ -115,24 +115,37 @@
     .mappa{
         float: left;
         margin: 0;
+        width:100%;
         margin-right: 30px;
         margin-left: 30px;
+        margin-top: 20px;
         padding: 0;
-        align-items: center;
+        //margin-left: 20%;
 
         iframe{
             border-radius: 1rem;
             margin-top: 40px;
+            width: 100%;
         }
 
         p{
-            font-size: 20px;
-            margin-left: 100px;
-            margin-bottom: -10px;
+            font-size: 18px;
+            color: $oliva;
+            margin-left: 7px;
+            margin-bottom: -30px;
+            margin-top: 20px;
         }
     }
 
 }
+
+.column {
+    //float: left;
+    margin-left: 12%;
+    width: 35%;
+  }
+  
+
 
 .mat-icon{
     height: 30px;

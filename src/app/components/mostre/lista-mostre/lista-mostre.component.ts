@@ -22,7 +22,7 @@ export class ListaMostreComponent implements OnInit{
       error: (err) =>{
         console.log(err);
       }
-    })
+    });
   }
 
   

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
 import { DropdownModule } from 'primeng/dropdown';
+import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { DropdownModule } from 'primeng/dropdown';
     ScrollingCardComponent,
     DetailComponent,
     RegistrationComponent,
+    AddMostraComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import { DropdownModule } from 'primeng/dropdown';
     ReactiveFormsModule,
     PasswordModule,
     DropdownModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

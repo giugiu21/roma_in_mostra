@@ -1,0 +1,87 @@
+@import "../../../../styles/colors.scss";
+
+.container-main-form{
+    background-image: url('https://www.elimeli.it/wp-content/uploads/2021/10/Mostra-Steve-McCurry-Conegliano.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 70px;
+    margin-bottom: -25px;
+
+}
+.container-form{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 25%;
+    padding: 30px 30px;
+    background-color: rgba(255, 255, 255, 0.725);
+    border-radius: 1rem;
+
+    h3{
+        font-size: 27px;
+        color: $terracotta;
+        margin-bottom: -3px;
+
+    }
+
+    label{
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+
+    .container-btn-form{
+        color: $oliva;
+        border-color: $oliva;
+        margin-top: 25px;
+        padding-left: 35%;
+        
+    }
+
+    .form-element{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 10px;
+    }
+
+    .checkbox{
+        width: 2%!important;
+    }
+}
+
+.danger {
+    color: #d02020;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+// .modal-header{
+//     background-color: $terracotta;
+
+//     h3{
+//         font-size: 28px;
+//         font-family: 'Homemade Apple', cursive!important;
+//         color: white;
+//         margin-left: 31%;
+//         margin-top: 10px;
+//     }
+// }
+
+// .modal-body{
+//     padding: 10px;
+
+//     h4{
+//         font-weight: bold;
+//         font-size: 18px;
+//     }
+// }
