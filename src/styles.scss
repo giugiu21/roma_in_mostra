@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules//bootstrap/dist/css/bootstrap.css";
+@import "styles/colors.scss";
+
 
 html, body { height: 100%; }
 
@@ -21,6 +23,28 @@ p{
     padding-top: 130px!important;
     
 }
+
+
+.p-password{
+    width: 100%!important;
+
+    .p-inputtext{
+        border: none;
+        height: 28px;
+        width: 91%!important;
+        float: right; 
+    }
+    
+}
+
+.btn.btn-primary{
+    background: $oliva;
+    border: none;
+    margin: auto;
+    padding: 10px 20px;
+   // --bs-btn-hover-bg: $oliva!important;
+}
+
 
 
 /* Importing Bootstrap SCSS file. */

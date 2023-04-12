@@ -1,41 +1,100 @@
 @import "../../../../styles/colors.scss";
 
-.contenitore-form{
+
+.container-main{
     padding-top: 180px;
     padding-bottom: 120px;
     background-image: url('https://www.visitareroma.com/wp-content/uploads/2019/10/Musei-Vaticani-e-Cappella-Sistina.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: -50px;
 }
 
-.row{
-    margin-top: -10px;
-    margin-bottom: -20px;
-}
+.container-form{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 1rem;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color: #fefffeab;
+    margin-top: 50px;
 
-.card{
-    width: 50%;
-    margin: 0 25%;
-    background-color: rgba(255, 255, 255, 0.85);
-    
-}
+    h2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
 
-
-.btn-primary{
-    background-color: $oliva!important;
-    border-color: $oliva!important;
-    font-weight: bold;
+   .container-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
     margin-bottom: 10px;
+
+    .btn.btn-primary{
+        background-color: $oliva;
+        border-color: $oliva;
+    }
+   }
 }
 
-.text-center{
-    margin-top: 10px;
-    margin-bottom: 15px;
+.registrazione{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 70px;
+    a{
+        color: $oliva;
+        font-weight: bolder;
+    }
 }
+
+label{
+    margin-top: 10px;
+}
+
+// .contenitore-form{
+//     padding-top: 180px;
+//     padding-bottom: 120px;
+//     background-image: url('https://www.visitareroma.com/wp-content/uploads/2019/10/Musei-Vaticani-e-Cappella-Sistina.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+// .row{
+//     margin-top: -10px;
+//     margin-bottom: -20px;
+// }
+
+// .card{
+//     width: 50%;
+//     margin: 0 25%;
+//     background-color: rgba(255, 255, 255, 0.85);
+    
+// }
+
+
+// .btn-primary{
+//     background-color: $oliva!important;
+//     border-color: $oliva!important;
+//     font-weight: bold;
+//     margin-bottom: 10px;
+// }
+
+// .text-center{
+//     margin-top: 10px;
+//     margin-bottom: 15px;
+// }
 
 p.help.is-danger{
-    margin-top: -13px;
+    margin-left: 4px;
     color: rgb(235, 29, 29)!important;
     font-weight: bold!important;
     font-size: 12px!important;

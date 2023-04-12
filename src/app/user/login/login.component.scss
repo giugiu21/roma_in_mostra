@@ -1,0 +1,43 @@
+@import "../../../styles/colors.scss";
+
+.container-form{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid $oliva;
+    border-radius: 1rem;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color: #8cb3694a;
+    box-shadow: 1px 1px 8px 1px black;
+    margin-top: 50px;
+
+    h2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 40px;
+        color: $oliva;
+        margin-bottom: 20px;
+        text-shadow: 1.3px 1px 1px #000000a3;;
+    }
+
+   .container-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   }
+}
+
+.registrazione{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 70px;
+    a{
+        color: $oliva;
+        font-weight: bolder;
+    }
+}

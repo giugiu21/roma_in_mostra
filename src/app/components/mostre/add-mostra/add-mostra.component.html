@@ -1,6 +1,6 @@
 <div class="container-main-form">
     <div class="container-form">
-        <h3>Inserisci una nuova mostra</h3>
+        <h3>Inserisci una mostra:</h3>
         <form class="contenitore-form" [formGroup]="form" (onSubmit)="onSubmit()">
             <div>
                 <div class="form-element">
@@ -49,13 +49,28 @@
 
                 
                 <div class="container-btn-form">
-                    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Pubblica Mostra</button>
+                    <button type="submit" class="btn btn-primary" (click)="open(modaleAddMostra)">Aggiungi Mostra</button>
                 </div>
-            </div>
-            
+            </div>  
 
-        </form>
-        
+        </form> 
     </div>
-    
 </div>
+
+<ng-template #modaleAddMostra let-modal>
+    <div class="modal-header">
+        <h3>Mostra Aggiunta!</h3>
+        <button type="button" class="btn-close" aria-label="close" (click)="modal.dismiss()"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Riepilogo:</h4>
+        <p>Titolo: {{mostraInserita.title}}</p>
+        <p>Descrizione: {{mostraInserita.description}}</p>
+        <p>Luogo: {{mostraInserita.place}}</p>
+        <p>Data di fine mostra: {{mostraInserita.endDate}}</p>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" (click)="modal.dismiss()" routerLink="mostre">CHIUDI</button>
+        <button type="button" class="btn btn-primary" (click)="modal.close()" ngbAutoFocus ruterLink="addMostra">AGGIUNGI ALTRA MOSTRA</button>
+      </div>
+</ng-template>

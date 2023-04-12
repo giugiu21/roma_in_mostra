@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from 'src/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PaginatorModule } from 'primeng/paginator';
+import { ToastModule } from 'primeng/toast';
+
+
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -20,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
 import { DropdownModule } from 'primeng/dropdown';
 import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
+import { LoginComponent } from './user/login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +39,7 @@ import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.co
     DetailComponent,
     RegistrationComponent,
     AddMostraComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,8 @@ import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.co
     ReactiveFormsModule,
     PasswordModule,
     DropdownModule,
+    PaginatorModule,
+    ToastModule,
     HttpClientModule,
   ],
   providers: [],

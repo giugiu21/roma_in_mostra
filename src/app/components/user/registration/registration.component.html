@@ -1,85 +1,42 @@
-
-<div class="contenitore-form">
-    <div class="card text-black" style="border-radius: 25px;">
-        <div class="card-body">
-            <div class="row justify-content-center">
-            <div class="col-md-10">
-                <p class="text-center h1 fw-bold">Registrati</p>
-                <form class="mx-1 mx-md-4" [formGroup]="form" (ngSubmit)="onSubmit()">
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="text" placeholder="es. Mario" id="name" name="name" class="form-control" formControlName="name"> 
-                            <label class="form-label" for="name">Il tuo nome</label>
-                            <p class="help is-danger" *ngIf="!form.get('name')?.valid && form.get('name').touched">Il campo nome è obbligatorio</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="text" placeholder="es. Rossi" id="lastname" name="lastname" class="form-control" formControlName="lastname"> 
-                            <label class="form-label" for="lastname">Il tuo cognome</label>
-                            <p class="help is-danger" *ngIf="!form.get('lastname')?.valid && form.get('lastname').touched">Il campo cognome è obbligatorio</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="text" placeholder="es. mario.rossi01" id="username" name="username" class="form-control" formControlName="username"> 
-                            <label class="form-label" for="username">Il tuo username</label>
-                            <p class="help is-danger" *ngIf="!form.get('username')?.valid && form.get('username').touched">Il campo username è obbligatorio</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <input type="text" placeholder="es. mario.rossi@email.it" id="email" name="email" class="form-control" formControlName="email"> 
-                            <label class="form-label" for="email">La tua email</label>
-                            <p class="help is-danger" *ngIf="form.controls.email.hasError('required') && form.get('email').touched">Il campo email è obbligatorio</p>
-                            <p class="help is-danger" *ngIf="form.controls.email.hasError('email') && form.get('email').touched">Email inserita non valida</p>
-                        </div>
-                    </div>
-                    <!-- <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="me-3"></i>
-                        <div class="form-outline">   
-                            <p-dropdown formControlName="city" [options]="cities" optionLabel="name"></p-dropdown>
-
-                            <p-dropdown [options]="cities" formControlName="city" placeholder="Select a City" [editable]="true" optionLabel="name"></p-dropdown>
-                            <br><label class="form-label" for="city">La tua provincia</label>
-                            <p class="help is-danger" *ngIf="form.controls.city.hasError('required') && form.get('city').touched">Il campo provincia è obbligatorio</p>
-                        </div>
-                    </div> -->
-
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <p-password formControlName="password" class="w-full form-control" [feedback]="false" styleClass="p-password p-component p-inputwrapper p-input-icon-right" [style]="{'width':'100%'}"
-                            [inputStyle]="{'width':'100%'}"></p-password>
-                            <!-- <input type="text" placeholder="password" id="password" name="password" class="form-control" formControlName="password">  -->
-                            <label class="form-label" for="password">Password</label>
-                            <p class="help is-danger" *ngIf="form.controls.password.hasError('pattern')">Il campo password deve contenere un carattere speciale, una maiuscola e un numero e essere lungo almeno 8 caratteri</p>
-                            <p class="help is-danger" *ngIf="!form.get('password')?.valid && form.get('password').touched">Il campo password è obbligatorio</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center mb-4">
-                        <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                        <div class="form-outline flex-fill mb-0">
-                            <p-password formControlName="ripetiPassword" class="w-full form-control" [feedback]="false" styleClass="p-password p-component p-inputwrapper p-input-icon-right" [style]="{'width':'100%'}"
-                            [inputStyle]="{'width':'100%'}"></p-password>
-                            <label class="form-label" for="ripetiPassword">Ripeti la password</label>
-                            <p class="help is-danger" *ngIf="!form.get('ripetiPassword')?.valid && form.get('ripetiPassword').touched">Il campo ripeti password è obbligatorio</p>
-                            <p class="help is-danger" *ngIf="form.getError('diversa') && form.get('ripetiPassword').touched">Attenzione la password inserita non combacia</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!form.valid">Registrati</button>
-                      </div>
-                </form>
-
+<div class="container-main">
+    <div class="container-form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <h2>Entra a far parte della community!</h2>
+            <div class="form-element">
+                <label for="name">Nome:</label>
+                <input type="text" placeholder="es. Mario" id="name" name="name" class="form-control" formControlName="name">
+                <p class="help is-danger" *ngIf="!form.get('name')?.valid && form.get('name').touched">Il campo nome è obbligatorio</p>
             </div>
+            <div class="form-element">
+                <label for="lastname">Cognome:</label>
+                <input type="text" placeholder="es. Rossi" id="lastname" name="lastname" class="form-control" formControlName="lastname">
+                <p class="help is-danger" *ngIf="!form.get('lastname')?.valid && form.get('lastname').touched">Il campo cognome è obbligatorio</p>
             </div>
-        </div>
+            <div class="form-element">
+                <label for="email">Email:</label>
+                <input type="text" placeholder="es. mario.rossi@gmail.com" id="email" name="email" class="form-control" formControlName="email">
+                <p class="help is-danger" *ngIf="!form.get('email')?.valid && form.get('email').touched">Il campo email è obbligatorio</p>
+            </div>
+            <div class="form-element">
+                <label for="password">Password:</label>
+                <p-password formControlName="password" class="w-full form-control" [toggleMask]="true" [feedback]="false" styleClass="p-password p-component p-inputwrapper p-input-icon-right" [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"></p-password>     
+                <p class="help is-danger" *ngIf="form.controls.password.hasError('pattern')&& form.get('password').touched">Il campo password deve contenere un carattere speciale, una maiuscola e un numero e essere lungo almeno 8 caratteri</p>
+                <p class="help is-danger" *ngIf="!form.get('password')?.valid && form.get('password').touched">Il campo password è obbligatorio</p> 
+            </div>
+            <div>
+                <label for="ripetiPassword">Ripeti la password:</label>
+                <p-password formControlName="ripetiPassword" class="w-full form-control" [feedback]="false" styleClass="p-password p-component p-inputwrapper p-input-icon-right" [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}"></p-password>
+                <p class="help is-danger" *ngIf="!form.get('ripetiPassword')?.valid && form.get('ripetiPassword').touched">Il campo ripeti password è obbligatorio</p>
+                <p class="help is-danger" *ngIf="form.getError('diversa') && form.get('ripetiPassword').touched">Attenzione la password inserita non combacia</p>
+            </div>
+            <div class="container-btn">
+                <button type="submit" class="btn btn-primary">REGISTRATI</button>
+            </div>
+        </form>
+    </div>
+    <div class="registrazione">
+        <h4>Se sei già registrato <a routerLink="../login">clicca qui</a></h4>
     </div>
 </div>
 
+<p-toast position="bottom-right"></p-toast>

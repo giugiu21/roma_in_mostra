@@ -5,15 +5,15 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
-    margin: 0px;
-    padding: 0px;
+    margin: -60px;
     padding-top: 70px;
-    margin-bottom: -25px;
+    padding-bottom: 100px;
+
+
 
 }
 .container-form{
-    height: 800px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,14 +27,15 @@
     border-radius: 1rem;
 
     h3{
-        font-size: 27px;
+        font-size: 45px;
         color: $terracotta;
-        margin-bottom: -3px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 30px;
 
     }
 
     label{
-        font-weight: bold;
         padding-bottom: 5px;
     }
 
@@ -42,7 +43,9 @@
         color: $oliva;
         border-color: $oliva;
         margin-top: 25px;
-        padding-left: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         
     }
 
@@ -58,6 +61,13 @@
     }
 }
 
+.btn.btn-primary{
+    background: $oliva!important;
+    border-color: $oliva!important;
+    height: 50px;
+
+}
+
 .danger {
     color: #d02020;
     font-weight: bold;
@@ -65,23 +75,25 @@
 }
 
 
-// .modal-header{
-//     background-color: $terracotta;
+.modal-header{
+    background-color: $terracotta;
 
-//     h3{
-//         font-size: 28px;
-//         font-family: 'Homemade Apple', cursive!important;
-//         color: white;
-//         margin-left: 31%;
-//         margin-top: 10px;
-//     }
-// }
+    h3{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin-left: 31%;
+        margin-top: 10px;
+    }
+}
 
-// .modal-body{
-//     padding: 10px;
+.modal-body{
+    padding: 10px;
 
-//     h4{
-//         font-weight: bold;
-//         font-size: 18px;
-//     }
-// }
+    h4{
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+

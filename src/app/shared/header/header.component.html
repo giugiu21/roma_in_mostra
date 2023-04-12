@@ -15,13 +15,18 @@
                 <a class="nav-link" routerLink="mostre"><mat-icon>collections</mat-icon>Mostre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="registrati"><mat-icon>person</mat-icon>Registrati</a>
+                <a class="nav-link" routerLink="mostre/addMostra"><mat-icon>add</mat-icon>Aggiungi mostra</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="addMostra"><mat-icon>add</mat-icon>Aggiungi mostra</a>
+              <li class="nav-item user" *ngIf="!authService.isLogged()">
+                  <a class="nav-link" routerLink="login"><mat-icon>person</mat-icon>Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><mat-icon>contacts</mat-icon>Contattaci</a>
+              </li>
+              <li class="nav-item user" *ngIf="authService.isLogged()">
+                <mat-icon>person</mat-icon><span class="name">Ciao {{user.name}}</span>
+                <a class="nav-link" routerLink="profilo"> - PROFILO</a>
+                <a class="nav-link" (click)="logout()"> - LOGOUT</a>
               </li>
             </ul>
           </div>
