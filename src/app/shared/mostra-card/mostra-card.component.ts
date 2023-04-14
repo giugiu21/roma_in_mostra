@@ -12,6 +12,9 @@ import { MostraService } from 'src/app/service/mostra.service';
 export class MostraCardComponent {
 
   mostre: Mostra[];
+  page = 1;
+
+  mostrePerPagina = 6;
 
   constructor(private mostraService: MostraService){}
 
@@ -19,5 +22,9 @@ export class MostraCardComponent {
     map(res => this.mostre = res),
   );
 
+  paginate(event){
+    event.page = event.page + 1;
+    this.page = event.page;
+   }
 
 }

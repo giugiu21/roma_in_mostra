@@ -42,9 +42,31 @@ p{
     border: none;
     margin: auto;
     padding: 10px 20px;
-   // --bs-btn-hover-bg: $oliva!important;
 }
 
+.btn.btn-primary:hover {
+    background-color: $oliva;
+    border-color: $oliva;
+}
+
+.btn.btn-primary:active {
+    background-color: #67844e!important;
+    border-color: #67844e!important;
+}
+
+
+.p-link:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem $oliva!important;
+    background-color: #8cb369ac!important;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: #90ab7979!important;
+    border-color: #93b07986!important;
+    color: #495057;
+}
 
 
 /* Importing Bootstrap SCSS file. */

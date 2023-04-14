@@ -23,11 +23,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="#"><mat-icon>contacts</mat-icon>Contattaci</a>
               </li>
-              <li class="nav-item user" *ngIf="authService.isLogged()">
+              <div class="dropdown" *ngIf="authService.isLogged()">
+                <button class="dropbtn"><mat-icon>person</mat-icon>Ciao <span class="name">{{user.name}}</span></button>
+                <div class="dropdown-content">
+                  <a routerLink="profilo">Profilo</a>
+                  <a (click)="logout()">Logout</a>
+                </div>
+              </div>
+              <!-- <li class="nav-item user" *ngIf="authService.isLogged()">
                 <mat-icon>person</mat-icon><span class="name">Ciao {{user.name}}</span>
-                <a class="nav-link" routerLink="profilo"> - PROFILO</a>
-                <a class="nav-link" (click)="logout()"> - LOGOUT</a>
-              </li>
+                <a class="nav-link link-user" routerLink="profilo"> - PROFILO</a>
+                <a class="nav-link link-user" (click)="logout()"> - LOGOUT</a>
+              </li> -->
             </ul>
           </div>
         </div>

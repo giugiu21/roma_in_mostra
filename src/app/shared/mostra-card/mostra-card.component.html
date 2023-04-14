@@ -1,4 +1,5 @@
-<div class="card-container" *ngFor="let mostra of mostre$ | async">
+<div class="container-cards">
+  <div class="card-container" *ngFor="let mostra of mostre$ | async | slice: (page * mostrePerPagina) - mostrePerPagina : page * mostrePerPagina">
     <div class="card">
         <div class="card-image" [ngStyle]="{'background-image': 'url(' + mostra.image +')'}"></div>
         <div class="card-body">
@@ -9,4 +10,16 @@
           </div> 
         </div>
       </div>
+  </div>
+  <div>
+    <div class="container-paginator">
+      <div>
+        <strong>{{mostrePerPagina}}</strong> Mostre su un totale di <strong>{{mostre.length}}</strong> mostre, pagina corrente: <strong>{{page}}</strong>
+      </div>
+      <p-paginator (onPageChange)="paginate($event)" [rows]="mostrePerPagina" [totalRecords]="mostre.length" (rowsPerPageOptionsChange)="mostrePerPagina"></p-paginator>
+    </div>
+  
+  </div>
 </div>
+
+

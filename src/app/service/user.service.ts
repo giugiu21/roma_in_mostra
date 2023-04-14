@@ -9,8 +9,8 @@ export class UserService {
 
   apiBaseUrl = 'api/users';
 
-  datiUtente = new ReplaySubject;
-  userRole = new ReplaySubject;
+  datiUtente = new ReplaySubject();
+  userRole = new ReplaySubject();
 
   constructor( private http: HttpClient) { }
 

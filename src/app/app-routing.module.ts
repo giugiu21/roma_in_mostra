@@ -6,7 +6,8 @@ import { RegistrationComponent } from './components/user/registration/registrati
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
-import { LoginComponent } from './user/login/login.component';
+import { LoginComponent } from './components/user/login/login.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -16,7 +17,7 @@ const routes: Routes = [
   {path: 'addMostra', component: AddMostraComponent},
   {path: '', pathMatch: 'full', component: ListaMostreComponent},
 ]},
-//{path: 'addMostra', component: AddMostraComponent},
+{path: 'profilo', component: ProfileComponent},
 {path: 'login', component: LoginComponent},
 {path: 'registrati', component: RegistrationComponent},
 {path: '**', redirectTo: 'home'},

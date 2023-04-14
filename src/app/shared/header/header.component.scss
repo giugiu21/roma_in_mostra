@@ -1,7 +1,6 @@
 @import '../../../styles/colors.scss';
 
 nav{
-    //background-color: #006666!important;
     background-color: $blu-verde!important;
     position: fixed; 
     width: 100%;
@@ -31,6 +30,7 @@ nav{
 
 
 
+
 .nav-link{
     color: black;
     text-decoration: none;
@@ -44,3 +44,49 @@ nav{
     font-size: 18px;
     padding-top: 2px;
 }
+
+.name{
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .dropbtn {
+    background-color: $oliva;
+    color: black;
+    padding: 8px;
+    margin-left: 15px;
+    font-size: 16px;
+    border: 1px $oliva;
+    border-radius: 1rem;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    min-width: 141px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+  .dropdown:hover .dropbtn {background-color: #9cc875;}

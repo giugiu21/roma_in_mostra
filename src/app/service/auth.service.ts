@@ -23,8 +23,11 @@ export class AuthService {
   saveStorage(res: any){
     const user = {
       name: res.name,
+      lastname: res.lastname,
       email: res.email,
-      password: res.password
+      password: res.password,
+      role: res.role,
+      createdAt: res.createdAt,
     }
 
     this.UserService.userRole.next(res.role);

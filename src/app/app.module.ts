@@ -24,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordModule } from 'primeng/password';
 import { DropdownModule } from 'primeng/dropdown';
 import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
-import { LoginComponent } from './user/login/login.component';
+import { LoginComponent } from './components/user/login/login.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { LoginComponent } from './user/login/login.component';
     RegistrationComponent,
     AddMostraComponent,
     LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
