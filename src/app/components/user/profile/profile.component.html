@@ -1,7 +1,38 @@
 <div class="container-main">
-    <h2>Profilo Utente:</h2>
+    <div class="container-profilo">
+        <div class="container-immagine">
+        </div>
+        <div class="dati-utente">
+            <h2>Profilo Utente:</h2>
+            <ul class="column1">
+                <li>
+                    <span>Nome: </span>{{user.name}}
+                </li>
+                <li>
+                   <span>Cognome: </span>{{user.lastname}}
+                </li>
+                <li>
+                    <span>Email: </span>{{user.email}}
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Roulo: </span>{{user.role}}
+                </li>
+                <li>
+                    <span>Data di iscrizione: </span>{{dataIscrizione}}
+                </li>
+            </ul>
+    
+        </div>
+
+    </div>
+    
+    
+    <!-- <h2>Profilo Utente:</h2>
     <p>Nome: {{user.name}}</p>
     <p>Cognome: {{user.lastname}}</p>
     <p>Email: {{user.email}}</p>
     <p>Roulo: {{user.role}}</p>
+    <p>Data di iscrizione: {{dataIscrizione}}</p> -->
 </div>

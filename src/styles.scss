@@ -42,6 +42,7 @@ p{
     border: none;
     margin: auto;
     padding: 10px 20px;
+    box-shadow: inset 0px 0px 3px 0.5px rgba(0, 0, 0, 0.6392156863);
 }
 
 .btn.btn-primary:hover {
@@ -68,6 +69,11 @@ p{
     color: #495057;
 }
 
+.editor .ck-editor__editable{
+    min-height: 200px!important;
+    max-height: 200px!important;
+    //max-width: 440px!important;
+}
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

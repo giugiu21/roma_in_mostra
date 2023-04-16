@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddMostraComponent } from './components/mostre/add-mostra/add-mostra.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
+import { LoggedInGuard } from './logged-in.guard';
 
 const routes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,7 +18,7 @@ const routes: Routes = [
   {path: 'addMostra', component: AddMostraComponent},
   {path: '', pathMatch: 'full', component: ListaMostreComponent},
 ]},
-{path: 'profilo', component: ProfileComponent},
+{path: 'profilo', component: ProfileComponent, canActivate: [LoggedInGuard]},
 {path: 'login', component: LoginComponent},
 {path: 'registrati', component: RegistrationComponent},
 {path: '**', redirectTo: 'home'},

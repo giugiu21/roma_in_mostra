@@ -1,26 +1,39 @@
 @import "../../../../styles/colors.scss";
 
+.container-main{
+    background-image: url('https://wips.plug.it/cips/initalia.virgilio.it/cms/2019/06/fori-di-roma.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -20px;
+    
+}
+
 .container-form{
     display: flex;
     flex-wrap: nowrap;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px solid $oliva;
+    border: 2px solid $terracotta;
     border-radius: 1rem;
     flex-direction: column;
     padding: 20px 20px;
-    background-color: #8cb3694a;
+    background-color: #c26a4a8e;
     box-shadow: 1px 1px 8px 1px black;
-    margin-top: 50px;
+    margin-top: 70px;
+
+    label{
+        color: white;
+    }
 
     h2{
         font-weight: bold;
         text-align: center;
         font-size: 40px;
-        color: $oliva;
+        color: white;
         margin-bottom: 20px;
-        text-shadow: 1.3px 1px 1px #000000a3;;
+        text-shadow: 1.3px 1px 1px #000000a3;
     }
 
    .container-btn{
@@ -35,9 +48,27 @@
     text-align: center;
     font-weight: bold;
     padding-top: 5px;
-    margin-bottom: 70px;
+    padding-bottom: 90px;
+    color: white;
     a{
         color: $oliva;
         font-weight: bolder;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .container-form{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .container-form{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

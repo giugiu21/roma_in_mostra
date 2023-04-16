@@ -1,6 +1,6 @@
 <div class="container-main-form">
     <div class="container-form">
-        <h3>Inserisci una mostra:</h3>
+        <h3>Nuova mostra:</h3>
         <form class="contenitore-form" [formGroup]="form" (onSubmit)="onSubmit()">
             <div>
                 <div class="form-element">
@@ -12,7 +12,8 @@
                 <div class="form-element">
                     <label>Descrizione:</label>
                     <br>
-                    <textarea rows = "5" cols = "60" name = "description" class="form-control" formControlName="description"></textarea>
+                    <ckeditor [editor]="Editor" [config]="editorConfig" name="description" class="editor" formControlName="description"></ckeditor>
+                    <!-- <textarea rows = "5" cols = "60" name = "description" class="form-control" formControlName="description"></textarea> -->
                     <p class="danger" *ngIf="!form.get('description')?.valid && form.get('description').touched">Il campo descrizione è obbligatorio</p>
                 </div>
     

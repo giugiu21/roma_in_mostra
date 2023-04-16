@@ -20,15 +20,15 @@
     gap: 2rem;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
-
-     padding: 0 2rem;
-     overflow-x: auto;
-     overscroll-behavior-inline: contain;
+    padding: 0 2rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
     
 }
 
 
 .card-container{
+    display: block;
     float: left;
     width: 30%;
     margin-left: 1.6%;
@@ -71,4 +71,16 @@
 .card-button{
     display: flex;
 
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .media-scroller{
+        grid-auto-columns: 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .media-scroller{
+        grid-auto-columns: 50%;
+    }
 }

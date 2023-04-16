@@ -14,9 +14,9 @@
 .container-form{
     display: flex;
     flex-wrap: nowrap;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 1rem;
     flex-direction: column;
     padding: 20px 20px;
@@ -59,40 +59,6 @@ label{
     margin-top: 10px;
 }
 
-// .contenitore-form{
-//     padding-top: 180px;
-//     padding-bottom: 120px;
-//     background-image: url('https://www.visitareroma.com/wp-content/uploads/2019/10/Musei-Vaticani-e-Cappella-Sistina.jpg');
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
-
-// .row{
-//     margin-top: -10px;
-//     margin-bottom: -20px;
-// }
-
-// .card{
-//     width: 50%;
-//     margin: 0 25%;
-//     background-color: rgba(255, 255, 255, 0.85);
-    
-// }
-
-
-// .btn-primary{
-//     background-color: $oliva!important;
-//     border-color: $oliva!important;
-//     font-weight: bold;
-//     margin-bottom: 10px;
-// }
-
-// .text-center{
-//     margin-top: 10px;
-//     margin-bottom: 15px;
-// }
-
 p.help.is-danger{
     margin-left: 4px;
     color: rgb(235, 29, 29)!important;
@@ -102,5 +68,25 @@ p.help.is-danger{
 
 .dropdown{
     width: 100%!important;
+    
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+
+    .container-form{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .container-form{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     
 }

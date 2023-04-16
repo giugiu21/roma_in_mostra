@@ -13,7 +13,7 @@ nav{
 
 
 .icona-navbar{
-    width: 120px;
+    width: 130px;
     margin-bottom: 10px;
     margin-top: -3px;
     color: black;
@@ -90,3 +90,27 @@ nav{
 }
 
   .dropdown:hover .dropbtn {background-color: #9cc875;}
+
+  @media only screen and (min-width: 0px) and (max-width: 480px){
+    
+    .icona-navbar{
+      width: 85px;
+  }
+  
+  .titolo-principale{
+      font-size: 22px;
+  }
+  
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 991px){
+    .dropbtn{
+      margin-left: 23px;
+      margin-top: 5px;
+    }
+
+    .dropdown-content{
+      margin-left: 136px;
+      bottom: -51px;
+    }
+  }

@@ -9,6 +9,7 @@ import { MaterialExampleModule } from 'src/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PaginatorModule } from 'primeng/paginator';
 import { ToastModule } from 'primeng/toast';
+import { CKEditorComponent, CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 import { HeaderComponent } from './shared/header/header.component';
@@ -55,6 +56,7 @@ import { ProfileComponent } from './components/user/profile/profile.component';
     DropdownModule,
     PaginatorModule,
     ToastModule,
+    CKEditorModule,
     HttpClientModule,
   ],
   providers: [],

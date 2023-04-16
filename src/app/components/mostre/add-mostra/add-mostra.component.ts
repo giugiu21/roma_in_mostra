@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { take } from 'rxjs';
 import { Mostra } from 'src/app/models/mostra.model';
+import * as ClassicEditorBuild from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-add-mostra',
@@ -24,6 +25,47 @@ export class AddMostraComponent {
     featured: new FormControl('', Validators.required),
     published: new FormControl(''),
   })
+
+
+  Editor = ClassicEditorBuild;
+
+  editorConfig = {
+    toolbar: {
+        items: [
+            'bold',
+            'italic',
+            'link',
+            'bulletedList',
+            'numberedList',
+            '|',
+            'indent',
+            'outdent',
+            '|',
+            'codeBlock',
+            'imageUpload',
+            'blockQuote',
+            'insertTable',
+            'undo',
+            'redo',
+        ]
+    },
+    image: {
+        toolbar: [
+            'imageStyle:full',
+            'imageStyle:side',
+            '|',
+            'imageTextAlternative'
+        ]
+    },
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    },
+    height: 300,
+};
 
 
   constructor(

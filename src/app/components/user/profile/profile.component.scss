@@ -1,0 +1,178 @@
+@import "../../../../styles/colors.scss";
+
+.container-main{
+    background-image: url('../../../../assets/images/sfondo-login.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.container-profilo{
+    border-radius: 1rem;
+    width: 75%;
+    border: 1px solid grey;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px black;
+    float: left;
+    margin: 5% 12.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.container-immagine{
+    background-image: url('https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 140px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 4%;
+    margin-right: -8%;
+    
+}
+
+.dati-utente{
+    width: 89%;
+    float: left;
+
+    h2{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 20px;
+    }
+
+    .column1{
+        padding-left: 110px;
+    }
+
+    ul{
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        padding-left: 40px;
+        list-style-type: none;
+        margin-bottom: 40px;
+
+        li{
+            font-size: 13px;
+            padding-bottom: 8px;
+
+            span{
+                color: black;
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+
+       
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+
+    .container-profilo{
+        width: 92%;
+        margin: 5% 4%;
+        padding-right: 2%;
+    }
+
+    .container-immagine{
+        width: 100%;
+        height: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .dati-utente{
+        width: 100%;
+
+        h2{
+            font-size: 40px;
+            padding-bottom: 10px;
+            margin-left: 3%;
+            padding-top: 10px;
+        }
+
+        .column1{
+            padding-right: 10%; 
+            padding-left: 10%;
+        }
+
+        ul{
+            width: 100%;
+            padding-right: 10%;
+            padding-left: 10%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+    
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .container-profilo{
+        width: 90%;
+        margin: 5% 5%;
+        padding-right: 2%;
+    }
+
+    .container-immagine{
+        width: 100%;
+        height: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .dati-utente{
+        width: 100%;
+    
+        h2{
+            text-align: center;
+            font-size: 50px;
+            padding-top: 20px;
+        }
+    }
+
+    .column1{
+        padding-left: 2%!important;
+    }
+
+    ul{
+        width: 50%;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    
+    .container-profilo{
+        width: 85%;
+        margin: 5% 7.5%;
+    }
+
+    ul{
+        padding-right: 2%;
+    }
+}

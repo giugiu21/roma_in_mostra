@@ -1,6 +1,7 @@
 @import "../../../styles/colors.scss";
 
 .card-container{
+    display: block;
     float: left;
     width: 30%;
     margin-left: 1.6%;
@@ -40,5 +41,23 @@
 
 .container-paginator{
     text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px){
+    .card-container{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .card-container{
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 20px;
+    }    
 }
 
