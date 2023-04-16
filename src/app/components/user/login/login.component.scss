@@ -15,11 +15,11 @@
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px solid $terracotta;
+    border: 2px solid rgb(134, 162, 129);
     border-radius: 1rem;
     flex-direction: column;
     padding: 20px 20px;
-    background-color: #c26a4a8e;
+    background-color: rgba(147, 157, 145, 0.675);
     box-shadow: 1px 1px 8px 1px black;
     margin-top: 70px;
 
@@ -33,6 +33,7 @@
         font-size: 40px;
         color: white;
         margin-bottom: 20px;
+        padding-top: 5px;
         text-shadow: 1.3px 1px 1px #000000a3;
     }
 

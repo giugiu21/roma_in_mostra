@@ -18,7 +18,7 @@ export class RegistrationComponent {
     name: new FormControl('', Validators.required),
     lastname: new FormControl('', Validators.required),
     username: new FormControl('', Validators.required),
-    city: new FormControl('', Validators.required),
+    //city: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.pattern(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$/)]),
     ripetiPassword: new FormControl('', Validators.required), 
